@@ -1,5 +1,7 @@
 # 🎭 MASALA THEATRE — Where Indian Food Becomes a Performance
 
+ https://suhas1249.github.io/masala-theatre/
+
 > **AURAWEBS Flagship Culinary Presentation**  
 > *A 5-Act interactive gastronomic theatre web experience combining scroll-driven narrative, HTML5 canvas particle engines, Web Audio API synthesis, interactive spice alchemy, and royal VIP booking.*
 
