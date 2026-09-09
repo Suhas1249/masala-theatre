@@ -156,7 +156,7 @@ export const ActOverture: React.FC<ActOvertureProps> = ({ onNextAct, onOpenReser
             {/* Dish Image */}
             <div className="w-full h-full rounded-2xl overflow-hidden relative">
               <img
-                src="/images/hero-lamb.jpg"
+                src="./images/hero-lamb.jpg"
                 alt="Saffron Smoked Lamb Raan"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
               />

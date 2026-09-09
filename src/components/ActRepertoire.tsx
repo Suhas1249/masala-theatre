@@ -30,7 +30,7 @@ export const ActRepertoire: React.FC<ActRepertoireProps> = ({
       spiceLevel: 3,
       isVegetarian: false,
       isChefSpecial: true,
-      image: '/images/hero-lamb.jpg',
+      image: './images/hero-lamb.jpg',
       pairing: 'Pair with 2018 Barolo or Reserve Saffron Dum Biryani',
     },
     {
@@ -44,7 +44,7 @@ export const ActRepertoire: React.FC<ActRepertoireProps> = ({
       spiceLevel: 1,
       isVegetarian: true,
       isChefSpecial: true,
-      image: '/images/dal-makhani.jpg',
+      image: './images/dal-makhani.jpg',
       pairing: 'Pair with Truffle Garlic Butter Naan',
     },
     {
@@ -58,7 +58,7 @@ export const ActRepertoire: React.FC<ActRepertoireProps> = ({
       spiceLevel: 4,
       isVegetarian: false,
       isChefSpecial: false,
-      image: '/images/tandoor-fire.jpg',
+      image: './images/tandoori-murgh.jpg',
       pairing: 'Pair with Mint Coriander Chutney & Spiced Old Fashioned',
     },
     {
@@ -72,7 +72,7 @@ export const ActRepertoire: React.FC<ActRepertoireProps> = ({
       spiceLevel: 2,
       isVegetarian: true,
       isChefSpecial: false,
-      image: '/images/spice-mortar.jpg',
+      image: './images/paneer-shabnam.jpg',
       pairing: 'Pair with Laccha Paratha & Saffron Lassi',
     },
     {
@@ -86,7 +86,7 @@ export const ActRepertoire: React.FC<ActRepertoireProps> = ({
       spiceLevel: 1,
       isVegetarian: true,
       isChefSpecial: false,
-      image: '/images/tandoor-fire.jpg',
+      image: './images/garlic-naan.jpg',
       pairing: 'Essential accompaniment for Royal Mains',
     },
     {
@@ -100,7 +100,7 @@ export const ActRepertoire: React.FC<ActRepertoireProps> = ({
       spiceLevel: 1,
       isVegetarian: true,
       isChefSpecial: true,
-      image: '/images/hero-lamb.jpg',
+      image: './images/shahi-phirni.jpg',
       pairing: 'Pair with Smoked Cardamom Chai',
     },
   ];

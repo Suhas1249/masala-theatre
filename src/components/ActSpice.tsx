@@ -91,7 +91,7 @@ export const ActSpice: React.FC<ActSpiceProps> = ({ onNextAct, onAddToCart }) =>
         tagline: 'SMOKY · ROYAL · INTENSE',
         description: 'Leg of lamb braised over charcoal with Kashmir red chili oil and 24k gold saffron infusion.',
         price: 48,
-        image: '/images/hero-lamb.jpg',
+        image: './images/hero-lamb.jpg',
         spicesUsed: ['Royal Saffron', 'Kashmiri Red Chili'],
         flavorProfile: 'Vibrant, smoky fire balanced by honeyed saffron elegance.',
       };
@@ -101,7 +101,7 @@ export const ActSpice: React.FC<ActSpiceProps> = ({ onNextAct, onAddToCart }) =>
         tagline: 'CREAMY · BOTANICAL · COMFORT',
         description: 'Black lentils slow-cooked for 18 hours with cultured butter and crushed cardamom pod oil.',
         price: 28,
-        image: '/images/dal-makhani.jpg',
+        image: './images/dal-makhani.jpg',
         spicesUsed: ['Green Elaichi', 'Bhuna Cumin'],
         flavorProfile: 'Silky smooth velvet with a uplifting herbal aroma.',
       };
@@ -111,7 +111,7 @@ export const ActSpice: React.FC<ActSpiceProps> = ({ onNextAct, onAddToCart }) =>
         tagline: 'AROMATIC · EARTHY · BOLD',
         description: 'Hand-ground spices in stone mortar cooked with artisan heritage gravy.',
         price: 36,
-        image: '/images/spice-mortar.jpg',
+        image: './images/paneer-shabnam.jpg',
         spicesUsed: selectedSpices.map((s) => spices.find((item) => item.id === s)?.name || s),
         flavorProfile: 'Custom blended by your spice selection.',
       };

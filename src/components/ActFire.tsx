@@ -191,7 +191,7 @@ export const ActFire: React.FC<ActFireProps> = ({ onNextAct }) => {
             {/* Tandoor Photo Layer */}
             <div className="w-full h-full rounded-2xl overflow-hidden relative">
               <img
-                src="/images/tandoor-fire.jpg"
+                src="./images/tandoor-fire.jpg"
                 alt="Roaring Tandoor Fire"
                 className="w-full h-full object-cover opacity-70 group-hover:scale-105 transition-transform duration-700"
               />

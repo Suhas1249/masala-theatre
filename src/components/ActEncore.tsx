@@ -45,18 +45,21 @@ export const ActEncore: React.FC<ActEncoreProps> = () => {
       name: "Chef's Table (Front Row)",
       desc: 'Direct view of the roaring tandoors & spice alchemy stage.',
       badge: 'Interactive Front Row',
+      image: './images/chefs-table.jpg',
     },
     {
       id: 'royal-booth',
       name: 'Royal Booth Sanctuary',
       desc: 'Plush velvet alcove with private gold chandelier lighting.',
       badge: 'VIP Private Alcove',
+      image: './images/royal-booth.jpg',
     },
     {
       id: 'garden-courtyard',
       name: 'Garden Courtyard',
       desc: 'Open-air courtyard with jasmine blossoms & starlight.',
       badge: 'Al Fresco Romance',
+      image: './images/garden-courtyard.jpg',
     },
   ];
 
@@ -98,15 +101,23 @@ export const ActEncore: React.FC<ActEncoreProps> = () => {
                       type="button"
                       key={seat.id}
                       onClick={() => setFormData({ ...formData, seatingArea: seat.id as any })}
-                      className={`p-4 rounded-2xl border text-left transition-all ${
+                      className={`p-3 rounded-2xl border text-left transition-all overflow-hidden relative group ${
                         isSelected
-                          ? 'bg-obsidian-800 border-gold shadow-[0_0_20px_rgba(212,175,55,0.4)]'
+                          ? 'bg-obsidian-800 border-gold shadow-[0_0_20px_rgba(212,175,55,0.4)] ring-1 ring-gold'
                           : 'bg-obsidian-800/40 border-gold/15 hover:border-gold/40'
                       }`}
                     >
-                      <span className="text-[10px] uppercase font-bold text-ember-400 font-mono block mb-1">
-                        {seat.badge}
-                      </span>
+                      <div className="w-full h-24 rounded-xl overflow-hidden mb-3 relative">
+                        <img
+                          src={seat.image}
+                          alt={seat.name}
+                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-obsidian-950 via-transparent to-transparent opacity-80" />
+                        <span className="absolute bottom-2 left-2 text-[9px] uppercase font-bold text-amber-300 font-mono bg-obsidian-900/80 px-2 py-0.5 rounded backdrop-blur-sm border border-gold/30">
+                          {seat.badge}
+                        </span>
+                      </div>
                       <h4 className="font-serif font-bold text-sm text-cream">{seat.name}</h4>
                       <p className="text-xs text-cream/60 mt-1 line-clamp-2">{seat.desc}</p>
                     </button>
